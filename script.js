@@ -74,6 +74,10 @@ checkBoxes.forEach((checkbox, index) => {
 
     saveToLocalStorage(goalArray); // Save updated checkbox state
     progressBar.value = (taskCompleted / 3) * 100;
+    if (taskCompleted === 3) {
+      localStorage.clear();
+    }
+
     progressBarText.textContent = `${taskCompleted}/3 completed`;
   });
 });
