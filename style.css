@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #d4f0bf;
+  font-family: "Kumbh Sans", serif;
+}
+h1 {
+  font-size: 3em;
+  color: #393939;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+}
+.main {
+  padding: 1.5rem;
+}
+h1 .one {
+  color: #529627;
+}
+h1 .two {
+  color: rgb(97, 72, 28);
+}
+.app-card {
+  max-width: 380px;
+  width: 100%;
+  background-color: white;
+  margin: 2rem auto;
+  padding: 0.7em 1.5em;
+  border-radius: 10px;
+}
+.today {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+  font-weight: 700;
+}
+.slogan {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.progress-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+progress {
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 20px;
+  appearance: none;
+}
+
+/* Webkit (Chrome, Safari) */
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #63d61c;
+  border-radius: 20px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+  background-color: #63d61c;
+  border-radius: 20px;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin-left: 2rem;
+  font-size: 0.7rem;
+  color: white;
+}
+.goal {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0.5rem;
+  border: 1px solid rgb(223, 222, 222);
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+.warning {
+  font-size: 10px;
+  color: red;
+  font-weight: 400;
+  margin-bottom: 0.9rem;
+  display: none;
+}
+input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 100%;
+  margin-top: 0.1rem;
+  font-size: 1rem;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 2px solid #d2d2d2;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Checkbox checked state */
+input[type="checkbox"]:checked {
+  background-color: #63d61c;
+}
+/* Optional: Add a checkmark */
+input[type="checkbox"]::before {
+  content: "✔";
+  font-size: 13px;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked::before {
+  display: block;
+}
+.footer-slogan {
+  font-size: 0.8rem;
+  color: #393939;
+  text-align: center;
+}
+.footer-text {
+  margin-top: 1rem;
+  color: #393939;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
